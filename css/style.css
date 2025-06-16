@@ -1,0 +1,37 @@
+@import 'cores.css';
+@import 'fonte.css';
+@import 'espacamento.css';
+@import 'utilitarios.css';
+
+@import 'header.css';
+@import 'home.css';
+@import 'blog.css';
+@import 'artigo.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--corA1);
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1280px; 
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 800px){
+  .container{
+    padding-left: 30px;
+    padding-right: 30px; 
+  }
+}

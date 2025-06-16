@@ -1,0 +1,23 @@
+.img_tema{
+  filter: opacity(25%);
+  width: 350px;
+  justify-self: start;
+}
+
+.artigo #home{
+  justify-items: center;
+}
+
+.artigo .text_home h1{
+  justify-self: start;
+  text-align: start;
+}
+
+.artigo .text_home h2{
+  justify-self: start;
+  text-align: start;
+}
+
+.artigo .btn{
+  text-align: center;
+}

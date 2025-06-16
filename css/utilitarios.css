@@ -1,0 +1,59 @@
+.btn1{
+  background-color: var(--corB1);
+  padding: 3px 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.btn1:hover{
+  color: var(--corA2) !important;
+}
+
+.btn2{
+  display: inline-block;
+  border: 2px solid var(--corA1);
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.btn2:hover{
+  border-color: var(--corA2);
+  color: var(--corA2);
+}
+
+.btn3{
+  display: inline-block;
+  border: 2px solid var(--corB1);
+  padding: 8px 30px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.btn3:hover{
+  background-color: var(--corB1);
+  color: var(--corA1);
+}
+
+.box_shadow{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.img_shadow{
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1000px){
+  .btn2{
+    padding: 6px 15px;
+  }
+  .btn3{
+    padding: 6px 25px;
+  }
+}
+
+@media (max-width:800px){
+  .btn2 span{
+    display: none;
+  }
+  .btn2{
+    padding: 5px 9px;
+  }
+}

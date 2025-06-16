@@ -1,0 +1,50 @@
+.logo-ML{
+  width: 80px;
+}
+
+header a{
+  display: block;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu .atual::after{
+  content: "";
+  display: block;
+  width: 102%;
+  height: 2px; 
+  border-radius: 2px;
+  background-color: var(--corA3);
+}
+
+.menu a:hover:not(.atual){
+  color: var(--corB1);
+}
+
+@media (max-width: 1000px){
+  .logo-ML{
+    scale: 80%;
+  }
+}
+@media (max-width: 800px){
+  .logo-ML{
+    scale: 70%;
+  }
+  header{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .menu{
+    gap: 25px;
+  }
+}

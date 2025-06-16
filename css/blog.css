@@ -1,0 +1,45 @@
+#blog .titulos{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#blog .titulos h2{
+  max-width: 40ch;
+}
+
+#blog .links_container{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  row-gap: 25px;
+}
+
+#blog .chamada{
+  text-align: center;  
+}
+
+@media (max-width: 1100px){ 
+  #blog .links_container a{
+    width: 190px;
+  }
+  #blog .links_container img{
+    width: 190px;
+  }
+
+}
+
+@media (max-width: 900px){ 
+  #blog .links_container{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (max-width: 700px){ 
+  #blog .links_container a{
+    width: 150px;
+  }
+  #blog .links_container img{
+    width: 150px;
+  }
+}
