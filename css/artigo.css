@@ -21,3 +21,23 @@
 .artigo .btn{
   text-align: center;
 }
+
+@media (max-width: 1000px){
+  .logo-Monica{
+    width: 180px;
+  }
+  .img_tema{
+    width: 300px;
+  }
+}
+
+
+@media (max-width: 800px){
+  .logo-Monica{
+    top: 5px;
+    width: 150px;
+  }
+  .img_tema{
+    width: 250px;
+  }
+}

@@ -10,6 +10,15 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .menu{
@@ -47,4 +56,48 @@ header{
   .menu{
     gap: 25px;
   }
+}
+
+@media (max-width:600px){
+  header.container{
+    padding-left: 0px;
+    padding-right: 10px; 
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu-toggle i{
+    color: var(--corB1);
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #fff;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 0px 0px 0px 20px;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: start;
+  }
+  .menu .atual::after{
+    display: none;
+  }
+  .atual{
+    color: var(--corA3);
+  }
+  .menu .btn1{
+    max-width: 12ch;
+    padding: 5px 8px;
+    border-radius: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
 }

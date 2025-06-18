@@ -246,3 +246,14 @@
 .pl100{
   padding-left: 100px;
 }
+
+@media (max-width: 800px){
+  .pt50{
+    padding-top: 35px;
+  }
+}
+@media (max-width: 600px){
+  .pt50{
+    padding-top: 20px;
+  }
+}

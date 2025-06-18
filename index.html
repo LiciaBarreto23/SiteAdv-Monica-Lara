@@ -13,11 +13,12 @@
 <body id="page_home">
   <header class="container pt5 pb5">
     <a href="index.html"><img src="img/logo-B1-ML.png" alt="Logo" class="logo-ML"></a>
-    <div class="menu p">
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu"> <i class="ri-more-2-line"></i> </button>
+    <nav class="menu p" id="menu">
       <a href="index.html" class="atual">Home</a>
       <a href="blog.html">Blog</a>
       <a href="https://wa.link/3xfjof" target="_blank" class="btn1 corA1">Atendimento Online</a>
-    </div>
+    </nav>
   </header>
 
   <section class="bc_B1 box_shadow">
@@ -25,8 +26,8 @@
       <img src="img/foto_perfil.jpg" alt="Foto de perfil" class="foto_perfil">
       <img src="img/logo-A3-Monica.png" alt="Logo" class="logo-Monica">
       <div class="text_home">
-        <h1 class="corA1 g bold pt20">Advogada Especializada em <br> Direito Previdenciário e Consumidor</h1>
-        <h2 class="corA2 pp pt5">Advocacia humanizada e atenta a sua necessidade. Advogar é estar a serviço da sociedade.</h2>
+        <h1 class="corA1 g bold pt20">Advogada especializada em <br> Direito Previdenciário e Consumidor</h1>
+        <h2 class="corA2 pp pt5">Advocacia humanizada e atenta à sua necessidade. Advogar é estar a serviço da sociedade.</h2>
         <a href="https://wa.link/3xfjof" target="_blank" class="btn2 corA1 mt10">Fale <span class="corA1">diretamente</span> com a especialista.</a>
       </div>
     </div>
@@ -34,8 +35,8 @@
 
   <section id="descricao" class="container pt50">
     <h1 class="corB1 gg">Sobre o escritório</h1>
-    <p class="pp pt15 mr80 ml80 identar"> Escritório ML advocacia atua na garantia dos direitos previdenciário dos contribuintes e não contribuintes, como também, na defesa dos direitos dos consumidores. Há mais de três anos atuando intensamente em prol de seus clientes, Dra. Mônica tem como pilar de seu trabalho o atendimento individualizado com atenção e humanidade, ciente de que cada cliente carrega consigo uma história e uma dor que precisa da sua ajuda. </p>
-    <p class="pp pt15 mr80 ml80 identar"> Trabalhamos com todas as matérias de direito previdênciário, sendo as principais : BPC, auxílio doença, salário maternidade, aposentadoria urbana e rural. </p>
+    <p class="pp pt15 mr80 ml80 identar"> Escritório ML advocacia atua na garantia dos direitos previdenciários dos contribuintes e não contribuintes, como também, na defesa dos direitos dos consumidores. Há mais de três anos atuando intensamente em prol de seus clientes, Dra. Mônica tem como pilar de seu trabalho o atendimento individualizado com atenção e humanidade, ciente de que cada cliente carrega consigo uma história e uma dor que precisa da sua ajuda. </p>
+    <p class="pp pt15 mr80 ml80 identar"> Trabalhamos com todas as matérias de direito previdênciário, sendo as principais: BPC, auxílio doença, salário maternidade, aposentadoria urbana e rural. </p>
     <p class="pp pt15 mr80 ml80 identar">Em direito do consumidor a atuação do escritório também ocorre de forma intensa principalmente em ações contra empresas prestadoras de serviço essencial (companhia de energia elétrica ou de água), contra agências de viagens, bancos e contra companhias aéreas. </p>
   </section>
 
@@ -44,18 +45,24 @@
     <div class="links_container pt15 pb15 mr80 ml80">
       <a href="artigos/corte_energia.html">
         <img src="img/artigos/corte_energia.png" class="img_shadow">
-        <h3 class="p">Corte de Energia</h3>
-        <p class="pp corA3">Cortaram sua energia “do nada”?</p>
+        <div>
+          <h3 class="p">Corte de Energia</h3>
+          <p class="pp corA3">Cortaram sua energia “do nada”?</p>
+        </div>
       </a>
       <a href="artigos/contrato_juros.html">
         <img src="img/artigos/contrato_juros.png" class="img_shadow">
-        <h3 class="p">Revisão de Contrato de Juros</h3>
-        <p class="pp corA3">Como diminuir os juros do seu contrato?</p>
+        <div>
+          <h3 class="p">Revisão de Contrato de Juros</h3>
+          <p class="pp corA3">Como diminuir os juros do seu contrato?</p>
+        </div>
       </a>
       <a href="artigos/bpc.html">
         <img src="img/artigos/bpc.png" class="img_shadow">
-        <h3 class="p">Benefício de Prestação Continuada</h3>
-        <p class="pp corA3">Você tem direito ao BPC?</p>
+        <div>
+          <h3 class="p">Benefício de Prestação Continuada</h3>
+          <p class="pp corA3">Você tem direito ao BPC?</p>
+        </div>
       </a>
     </div>
     <a href="blog.html" class="btn3">Ver mais</a>
@@ -68,15 +75,15 @@
       <h3 class="text g pt5 pb5 mb20">Siga nas <br> Redes Sociais!</h3>
       <a href="https://www.instagram.com/monicalara_oliveira?igsh=ZHVpdWgyZGxzYTFi" target="_blank" class="mt5">
         <i class="ri-instagram-line"></i>
-        <p>Mônica Lara | Advogada</p>
+        <p class="pp">Mônica Lara | Advogada</p>
       </a>
       <a href="https://wa.link/3xfjof" target="_blank" class="mt5">
         <i class="ri-whatsapp-line"></i>
-        <p>+55 85 98500-1715</p>
+        <p class="pp">+55 85 98500-1715</p>
       </a>
       <a href="mailto:monicalaralimaoliveira@gmail.com" target="_blank" class="mt5">
         <i class="ri-mail-line"></i>
-        <p>monicalaralimaoliveira@gmail.com</p>
+        <p class="pp">monicalaralimaoliveira@gmail.com</p>
       </a>
     </div>
     <img src="img/logo-A2-circulo.png" alt="" class="mr80 logo-circulo">
@@ -86,5 +93,40 @@
     <p class="corA1 pp">Todos os direitos reservados.</p>
   </footer>
 </body>
+<script>
+  function ajustarImagem() {
+    const section = document.querySelector(".bc_B1");
+    const container = document.querySelector("#home");
+    const foto = document.querySelector(".foto_perfil");
+
+    if (!section || !container || !foto) return;
+
+    if (window.innerWidth <= 600) {
+      // Move a imagem para fora do container, se ainda estiver dentro
+      if (foto.parentElement === container) {
+        section.insertBefore(foto, container);
+      }
+      // Troca o src para versão mobile
+      foto.src = "img/foto_perfil_mobile.png";
+    } else {
+      // Move a imagem de volta para o container, se estiver fora
+      if (foto.parentElement === section) {
+        container.insertBefore(foto, container.firstChild);
+      }
+      // Restaura o src padrão
+      foto.src = "img/foto_perfil.jpg";
+    }
+  }
+  window.addEventListener("load", ajustarImagem);
+  window.addEventListener("resize", ajustarImagem);
+
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
 
 </html>

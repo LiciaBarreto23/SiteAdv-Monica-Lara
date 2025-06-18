@@ -227,3 +227,61 @@ footer p{
   } 
 }
 
+@media (max-width: 600px){
+  #home{
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .foto_perfil{
+    width: 100vw;
+  }
+  #page_home .logo-Monica{
+    top: -45px;
+  }
+  .text_home h1{
+    justify-self: center;
+    text-align: center;
+  }
+  .text_home h2{
+    justify-self: center;
+    text-align: center;
+  }
+  .text_home a {
+    margin-bottom: 15px;
+  }
+
+  #redes {
+    grid-template-columns: 1fr ;
+  }
+  #redes img{
+    display: none;
+  }
+  #redes div{
+    background-image: url(../img/logo-A2-circulo.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .links_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .links_container a{
+   display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px; 
+    align-items: center; 
+    width: 100%;
+  }
+  .links_container a div{
+    display: flex;
+    flex-direction: column;
+  }
+  .links_container img{
+    width: 120px;
+  }
+}
+
