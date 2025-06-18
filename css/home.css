@@ -1,5 +1,5 @@
 .foto_perfil{
-    width: 420px;
+  width: 420px;
 }
 
 .logo-Monica{
@@ -135,6 +135,10 @@
   justify-self: center;
 }
 
+#redes .local{
+  max-width: 40ch;
+}
+
 /*------------------*/
 
 footer p{
@@ -225,6 +229,9 @@ footer p{
   .links_container{
     grid-template-columns: auto auto auto;
   } 
+  #redes .local{
+  max-width: 30ch;
+  }
 }
 
 @media (max-width: 600px){
@@ -263,6 +270,9 @@ footer p{
     background-repeat: no-repeat;
     background-size: contain;
   }
+  #redes .local{
+    max-width: 40ch;
+  }
 
   .links_container{
     display: flex;
@@ -285,3 +295,15 @@ footer p{
   }
 }
 
+@media (max-width:420px){
+  #redes .local{
+    max-width: 30ch;
+  }
+}
+@media (max-width:325px){
+  #redes p{
+    max-width: 24ch !important;
+    word-wrap: break-word; /* quebra palavras muito longas */
+    overflow-wrap: break-word; /* alternativa mais moderna */
+  }
+}

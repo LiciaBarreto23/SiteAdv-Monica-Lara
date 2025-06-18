@@ -50,6 +50,10 @@
     margin-left: 50px !important;
     margin-right: 50px !important;
   }
+
+  .artigo .vermais{
+    margin-left: 0px !important;
+  }
 }
 
 @media (max-width: 800px){
@@ -68,7 +72,7 @@
 
 
 @media (max-width: 600px){
-  .logo-Monica{
+  .logo-Monica:not(#page_home .logo-Monica){
     width: 130px;
   }
   .img_tema{
