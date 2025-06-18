@@ -90,10 +90,15 @@ header{
   .atual{
     color: var(--corA3);
   }
+  .menu a:not(.btn1){
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   .menu .btn1{
     max-width: 12ch;
     padding: 5px 8px;
     border-radius: 10px;
+    text-align: center;
   }
 
   .menu.active {

@@ -12,17 +12,18 @@
 <body id="blog">
   <header class="container pt5 pb5">
     <a href="index.html"><img src="img/logo-B1-ML.png" alt="Logo" class="logo-ML"></a>
-    <div class="menu p">
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu"> <i class="ri-more-2-line"></i> </button>
+    <nav class="menu p" id="menu">
       <a href="index.html">Home</a>
       <a href="blog.html" class="atual">Blog</a>
       <a href="https://wa.link/3xfjof" target="_blank" class="btn1 corA1">Atendimento Online</a>
-    </div>
+    </nav>
   </header>
 
   <section class="box_shadow">
     <div class="container titulos">
       <h1 class="gg corB1 bold pt30">Confira nossos artigos!</h1>
-      <h2 class="m pt5">Veja nossos conteúdos, e entenda melhor seus direitos e como podemos ajudá-lo!
+      <h2 class="p pt5">Veja nossos conteúdos, e entenda melhor seus direitos e como podemos ajudá-lo!
       </h2>
     </div>
   </section>
@@ -30,28 +31,38 @@
   <section class="container links_container pt30 pb30">
       <a href="artigos/corte_energia.html">
         <img src="img/artigos/corte_energia.png" class="img_shadow">
-        <h3 class="p">Corte de Energia</h3>
-        <p class="pp corA3">Cortaram sua energia “do nada”?</p>
+        <div>
+          <h3 class="p">Corte de Energia</h3>
+          <p class="pp corA3">Cortaram sua energia “do nada”?</p>
+        </div>
       </a>
       <a href="artigos/contrato_juros.html">
         <img src="img/artigos/contrato_juros.png" class="img_shadow">
-        <h3 class="p">Revisão de Contrato de Juros</h3>
-        <p class="pp corA3">Como diminuir os juros do seu contrato?</p>
+        <div>
+          <h3 class="p">Revisão de Contrato de Juros</h3>
+          <p class="pp corA3">Como diminuir os juros do seu contrato?</p>
+        </div>
       </a>
       <a href="artigos/bpc.html">
         <img src="img/artigos/bpc.png" class="img_shadow">
-        <h3 class="p">Benefício de Prestação Continuada</h3>
-        <p class="pp corA3">Você tem direito ao BPC?</p>
+        <div>
+          <h3 class="p">Benefício de Prestação Continuada</h3>
+          <p class="pp corA3">Você tem direito ao BPC?</p>
+        </div>
       </a>  
       <a href="">
         <img src="img/artigos/auxilio_maternidade.png" class="img_shadow">
-        <h3 class="p">Auxilio Maternidade</h3>
-        <p class="pp corA3">Descubra se você tem direito!</p>
+        <div>
+          <h3 class="p">Auxilio Maternidade</h3>
+          <p class="pp corA3">Descubra se você tem direito!</p>
+        </div>
       </a> 
       <a href="">
         <img src="img/artigos/auxilio_maternidade.png" class="img_shadow">
-        <h3 class="p">Auxilio Maternidade</h3>
-        <p class="pp corA3">Descubra se você tem direito!</p>
+        <div>
+          <h3 class="p">Auxilio Maternidade</h3>
+          <p class="pp corA3">Descubra se você tem direito!</p>
+        </div>
       </a>     
   </section>
 
@@ -87,4 +98,19 @@
     <p class="corA1 pp">Todos os direitos reservados.</p>
   </footer>
 </body>
+<script>
+  //menu
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('active');
+  });
+  menu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+  document.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+</script>
 </html>

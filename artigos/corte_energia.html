@@ -13,11 +13,12 @@
 <body class="artigo">
   <header class="container pt5 pb5">
     <a href="../index.html"><img src="../img/logo-B1-ML.png" alt="Logo" class="logo-ML"></a>
-    <div class="menu p">
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu"> <i class="ri-more-2-line"></i> </button>
+    <nav class="menu p" id="menu">
       <a href="../index.html">Home</a>
       <a href="../blog.html">Blog</a>
       <a href="https://wa.link/3xfjof" target="_blank" class="btn1 corA1">Atendimento Online</a>
-    </div>
+    </nav>
   </header>
 
   <section class="bc_A3 box_shadow">
@@ -32,17 +33,22 @@
 
   <section id="descricao" class="container pt50">
     <p class="p pt15 mr80 ml80 identar">Saiba que isso é <span class="bold">não é permitido pelo Código do Consumidor</span>. Mesmo que você esteja devendo, você precisa ser informado antes, ou seja, notificado que vai acontecer o corte (independente de você estar devendo, precisa ser comunicado). </p>
-    <p class="p pt15 mr80 ml80 identar">Se isso aconteceu com você, fique sabendo que você precisa ser indenizado. O dano, e portanto, a indenização, será ainda maior se: </p> 
+    <p class="p pt15 mr80 ml80 identar">Se isso aconteceu com você, fique sabendo que você precisa ser indenizado. O dano, e portanto, a indenização, será ainda maior se: </p>
     <ul class="p pt5 pl5 mr80 ml80">
       <li>O corte acontecer depois das 18h;</li>
       <li>Se você mora com pessoa que depende do uso de aparelhos elétricos em razão da saúde;</li>
       <li>Se o corte de energia aconteceu durante o fim de semana;</li>
       <li>Se o corte foi por conta de um débito muito antigo.</li>
-    </ul>    
+    </ul>
     <p class="p pt15 mr80 ml80 identar"> Se você foi vítima dessa atitude das empresas elétricas e também de água, converse com um advogado especialista, relate o seu caso e pergunte seus direitos. Não permita ser mais uma vítima de desrespeito com os consumidores.</p>
+    <p class="publish pt8 pp corA3">Publicado em: <br> 20/06/2025</p>
     <div class="btn pt10">
       <a href="https://wa.link/3xfjof" target="_blank" class="btn3">Obter ajuda</a>
     </div>
+    <a href="../blog.html" class="vermais pt15">
+      <i class="ri-information-line"></i>
+      <p class="pp corB1 bold">Clique para ver mais artigos!</p>
+    </a>
   </section>
 
   <div id="linha_detalhe" class="mt50 mb15"></div>
@@ -73,5 +79,20 @@
     <p class="corB1 pp">Todos os direitos reservados.</p>
   </footer>
 </body>
+<script>
+  //menu
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('active');
+  });
+  menu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+  document.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+</script>
 
 </html>

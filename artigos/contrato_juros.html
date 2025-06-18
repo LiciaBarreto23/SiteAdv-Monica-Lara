@@ -13,11 +13,12 @@
 <body class="artigo">
   <header class="container pt5 pb5">
     <a href="../index.html"><img src="../img/logo-B1-ML.png" alt="Logo" class="logo-ML"></a>
-    <div class="menu p">
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu"> <i class="ri-more-2-line"></i> </button>
+    <nav class="menu p" id="menu">
       <a href="../index.html">Home</a>
       <a href="../blog.html">Blog</a>
       <a href="https://wa.link/3xfjof" target="_blank" class="btn1 corA1">Atendimento Online</a>
-    </div>
+    </nav>
   </header>
 
   <section class="bc_A3 box_shadow">
@@ -35,9 +36,14 @@
     <p class="p pt15 mr80 ml80 identar"> Quando isso acontece é necessário pedir uma revisão de juros daquele contrato judicialmente, pois existem limites na aplicação dos juros que precisam ser respeitados. Em alguns casos, os juros extrapolam em até 80% o limite legal, e isso não é permitido. </p>
     <p class="p pt15 mr80 ml80 identar">Se você está suspeitando que o seu contrato está com juros demais, converse com um advogado especialista e peça uma revisão do seu contrato. Ele vai dizer se está com juros exorbitantes e fora do que a lei permite, além de lhe orientar o que fazer para diminuir o valor que você  paga. </p> 
     <p class="p pt15 mr80 ml80 bold">Resumindo: é possível diminuir o montante da sua dívida. Juros exorbitantes é ilegal. </p> 
-    <div class="btn pt20">
+    <p class="publish pt8 pp corA3">Publicado em: <br> 20/06/2025</p>
+    <div class="btn pt10">
       <a href="https://wa.link/3xfjof" target="_blank" class="btn3">Obter ajuda</a>
     </div>
+    <a href="../blog.html" class="vermais pt15">
+      <i class="ri-information-line"></i>
+      <p class="pp corB1 bold">Clique para ver mais artigos!</p>
+    </a>
   </section>
 
   <div id="linha_detalhe" class="mt50 mb15"></div>
@@ -68,5 +74,19 @@
     <p class="corB1 pp">Todos os direitos reservados.</p>
   </footer>
 </body>
-
+<script>
+  //menu
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('active');
+  });
+  menu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+  document.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+</script>
 </html>

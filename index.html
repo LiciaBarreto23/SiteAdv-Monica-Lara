@@ -35,9 +35,9 @@
 
   <section id="descricao" class="container pt50">
     <h1 class="corB1 gg">Sobre o escritório</h1>
-    <p class="pp pt15 mr80 ml80 identar"> Escritório ML advocacia atua na garantia dos direitos previdenciários dos contribuintes e não contribuintes, como também, na defesa dos direitos dos consumidores. Há mais de três anos atuando intensamente em prol de seus clientes, Dra. Mônica tem como pilar de seu trabalho o atendimento individualizado com atenção e humanidade, ciente de que cada cliente carrega consigo uma história e uma dor que precisa da sua ajuda. </p>
-    <p class="pp pt15 mr80 ml80 identar"> Trabalhamos com todas as matérias de direito previdênciário, sendo as principais: BPC, auxílio doença, salário maternidade, aposentadoria urbana e rural. </p>
-    <p class="pp pt15 mr80 ml80 identar">Em direito do consumidor a atuação do escritório também ocorre de forma intensa principalmente em ações contra empresas prestadoras de serviço essencial (companhia de energia elétrica ou de água), contra agências de viagens, bancos e contra companhias aéreas. </p>
+    <p class="p pt15 mr80 ml80 identar"> Escritório ML advocacia atua na garantia dos direitos previdenciários dos contribuintes e não contribuintes, como também, na defesa dos direitos dos consumidores. Há mais de três anos atuando intensamente em prol de seus clientes, Dra. Mônica tem como pilar de seu trabalho o atendimento individualizado com atenção e humanidade, ciente de que cada cliente carrega consigo uma história e uma dor que precisa da sua ajuda. </p>
+    <p class="p pt15 mr80 ml80 identar"> Trabalhamos com todas as matérias de direito previdênciário, sendo as principais: BPC, auxílio doença, salário maternidade, aposentadoria urbana e rural. </p>
+    <p class="p pt15 mr80 ml80 identar">Em direito do consumidor a atuação do escritório também ocorre de forma intensa principalmente em ações contra empresas prestadoras de serviço essencial (companhia de energia elétrica ou de água), contra agências de viagens, bancos e contra companhias aéreas. </p>
   </section>
 
   <section id="saibamais" class="container pt50">
@@ -94,37 +94,39 @@
   </footer>
 </body>
 <script>
+  //foto_perfil
   function ajustarImagem() {
     const section = document.querySelector(".bc_B1");
     const container = document.querySelector("#home");
     const foto = document.querySelector(".foto_perfil");
-
     if (!section || !container || !foto) return;
-
     if (window.innerWidth <= 600) {
-      // Move a imagem para fora do container, se ainda estiver dentro
       if (foto.parentElement === container) {
         section.insertBefore(foto, container);
       }
-      // Troca o src para versão mobile
       foto.src = "img/foto_perfil_mobile.png";
     } else {
-      // Move a imagem de volta para o container, se estiver fora
       if (foto.parentElement === section) {
         container.insertBefore(foto, container.firstChild);
       }
-      // Restaura o src padrão
       foto.src = "img/foto_perfil.jpg";
     }
   }
   window.addEventListener("load", ajustarImagem);
   window.addEventListener("resize", ajustarImagem);
 
+  //menu
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
-
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     menu.classList.toggle('active');
+  });
+  menu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+  document.addEventListener('click', () => {
+    menu.classList.remove('active');
   });
 </script>
 

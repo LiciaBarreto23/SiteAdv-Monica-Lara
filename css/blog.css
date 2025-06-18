@@ -43,3 +43,14 @@
     width: 150px;
   }
 }
+
+@media (max-width: 600px){
+  #blog  .links_container a{
+    width: 100%;
+  }
+}
+@media (max-width: 420px){
+  #blog .links_container img{
+    width: 120px;
+  }
+}
